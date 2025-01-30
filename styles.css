@@ -1,5 +1,20 @@
+body {
+    font-size: 100%;
+    font-family: "Sofia", sans-serif;
+}
+
 h1 {
     text-align: center;
+}
+
+h1.to-do-list {
+    padding: 60px;
+    text-align: left;
+}
+
+.to-do-list {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 div {
@@ -28,3 +43,49 @@ ol li span {
     background-color: brown;
 }
 
+ul.to-do-list {
+    list-style-type: none;
+    color: black;
+}
+
+ul span::before { 
+    content: "\f096"; /* 046 */
+    margin: 35px;
+    font-family: "Font Awesome 5 Free";
+}
+
+ul li.marked span::before { 
+    content: "\f046"; /* 046 */
+    margin: 35px;
+    font-family: "Font Awesome 5 Free";
+}
+
+ul.to-do-list li {
+    padding-top: 15px;
+}
+
+ul span::after {
+    content: "\f00d";
+    margin: 35px;
+    font-family: "FontAwesome";
+    color: darkred;
+}
+
+ul li {
+    height: 40px;
+}
+
+ul li:nth-child(even) {
+    background-color: rgb(24, 153, 228);
+}
+
+ul li:nth-child(odd) {
+    background-color: rgb(145, 207, 243);
+}
+
+ul li[class="marked"] {
+    background-color: rgb(182, 180, 180);
+    label {
+        text-decoration: line-through;
+    }
+}
