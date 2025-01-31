@@ -89,3 +89,60 @@ ul li[class="marked"] {
         text-decoration: line-through;
     }
 }
+
+/* Опис таблиці */
+div.table {
+    padding: 0px;
+    width: 500px;
+    height: 200px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* прибирає відстань між рядками та колонками */
+}
+
+table, th, td {
+    text-align: center;
+    height: 35px;
+}
+
+th {
+    background-color: lightblue;
+    min-width: 100px;
+
+}
+
+tr th:first-child {
+    text-align: left;
+    padding-left: 10px;
+    width: 150px;
+    color:#ff3399;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}
+
+tr:first-child {
+    color: green;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+tr:nth-child(odd) {
+    background-color: #cdf3f3;
+}
+
+tr:nth-child(even) {
+    background-color: #8af3f3;
+}
+
+tr:hover {
+    background-color: aquamarine;
+    color: blue;
+    th {
+        background-color: aquamarine;
+    }
+}
