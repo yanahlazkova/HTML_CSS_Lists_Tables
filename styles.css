@@ -43,6 +43,8 @@ ol li span {
     background-color: brown;
 }
 
+/* To Do List */
+
 ul.to-do-list {
     list-style-type: none;
     color: black;
@@ -118,14 +120,12 @@ tr th:first-child {
     text-align: left;
     padding-left: 10px;
     width: 150px;
-    color:#ff3399;
     position: sticky;
     left: 0;
     z-index: 1;
 }
 
 tr:first-child {
-    color: green;
     position: sticky;
     top: 0;
     z-index: 2;
